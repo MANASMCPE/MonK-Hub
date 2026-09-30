@@ -11,8 +11,8 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local StarterGui = game:GetService("StarterGui")
 
 -- Cleanup old GUI if exists
-if CoreGui:FindFirstChild("MONK ChocoSpammer") then
-    CoreGui.MONK ChocoSpammer:Destroy()
+if CoreGui:FindFirstChild("MONK CelesitalSpammer") then
+    CoreGui.MONK MonKSpammer:Destroy()
 end
 if CoreGui:FindFirstChild("AlphaDaddySpammer") then
     CoreGui.AlphaDaddySpammer:Destroy()
@@ -20,7 +20,7 @@ end
 
 -- ScreenGui Setup
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "MONK ChocoSpammer"
+ScreenGui.Name = "MONK CelestialSpammer"
 ScreenGui.Parent = CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -29,7 +29,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ----------------------------------------------------------------
 task.spawn(function()
     task.wait(1)
-    local execMsg = "✌🏻 😝CHOCO EDITION USER DETECTED ⚠️ (MADE BY MONK 🦁 (@SUPERMONKXSCRIPTS ) 🔥"
+    local execMsg = "✌🏻 😝CELESTAL EDITION USER DETECTED ⚠️ (MADE BY MONK 🦁 (@SUPERMONKXSCRIPTS ) 🔥"
     local border = "(!)(!)(!)(!)(!)(!)(!)(!)(!)(!)(!)(!)(!)(!)"
     local fullExecMessage = border .. "\n" .. execMsg .. "\n" .. border
 
@@ -67,7 +67,7 @@ local IntroText = Instance.new("TextLabel")
 IntroText.Size = UDim2.new(1, 0, 1, 0)
 IntroText.BackgroundTransparency = 1
 IntroText.Font = Enum.Font.GothamBold
-IntroText.Text = "🔥CHOCO EDITION SPAMMER 😝\n( MADE BY MONK  🦁 )\n\n🥶I WILL BE FIGHTING FOR U DON'T WORRY MY FRIEND ✨"
+IntroText.Text = "🔥 CELESTIAL EDITION SPAMMER 😝\n( MADE BY MONK  🦁 )\n\n🥶I WILL BE FIGHTING FOR U DON'T WORRY MY FRIEND ✨"
 IntroText.TextColor3 = Color3.fromRGB(255, 255, 255)
 IntroText.TextSize = 28
 IntroText.ZIndex = 11
